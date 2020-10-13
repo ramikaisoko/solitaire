@@ -29,12 +29,14 @@ module.exports = function (config) {
 
 
 	plugins: [
-          'karma-teamcity-reporter',
-          'karma-jasmine',
-          'karma-coverage',
-          'karma-chrome-launcher',
-		  "karma-firefox-launcher",
-          'karma-phantomjs-launcher'
+             'karma-jasmine',
+             'karma-requirejs',
+             'karma-coverage',
+             'karma-junit-reporter',
+             'karma-phantomjs-launcher',
+             'karma-chrome-launcher',
+             'karma-firefox-launcher',
+             'karma-ie-launcher'
         ],
 
     junitReporter: {
